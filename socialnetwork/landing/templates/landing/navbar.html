@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" 
+      {% if user.is_authenticated %}
+      href="{% url 'post-list' %}"
+      {% else %}
+      href="{% url 'index' %}"
+      {% endif %}
+
+      ><i class="fas fa-comment"></i> INTERLINK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Página Inicial</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          {% if user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i> 
+              Meu Usuário
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><i class="fas fa-address-card"></i> Perfil</a></li>
+              <li><a class="dropdown-item" href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt"></i> Desconectar</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-link"></i> Vincular conta</a></li>
+            </ul>
+          </li>
+
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link disabled">Em breve</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="pesquisar usuário..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </form>
+      </div>
+    </div>
+  </nav>
