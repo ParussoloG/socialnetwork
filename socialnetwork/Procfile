@@ -1,0 +1,1 @@
+web: gunircorn socialnetwork.wsgi --log-file -
