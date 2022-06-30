@@ -1,44 +1,30 @@
-username: admin
-password: grupo6admin
+Usuários Exemplos para testes Login/ Logout:
 
 Usuário 1:
-
 Login: RafaelTavares
-Email Rafael@bing.com
+Email: Rafael@bing.com
 Senha: usuarioteste1
 
-Usuário 1:
+Usuário 2:
 
-Login:
-Email
-Senha:
+Login: HelenS
+Email: helens@uol.com
+Senha: usuarioteste2
 
-Usuário 1:
+Usuário 3:
 
-Login:
-Email
-Senha:
+Login: AndersonT
+Email: andersont@teste.com
+Senha: usuarioteste3
 
-Usuário 1:
+Usuário 4:
 
-Login:
-Email
-Senha:
+Login: EdsonT
+Email: edsont@teste.com
+Senha: usuarioteste4
 
-Usuário 1:
+Usuário 5:
 
-Login:
-Email
-Senha:
-
-Usuário 1:
-
-Login:
-Email
-Senha:
-
-Usuário 1:
-
-Login:
-Email
-Senha:
+Login: Jorge
+Email: jorget@teste.com
+Senha: usuarioteste5
